@@ -1,0 +1,60 @@
+/*
+Elijah Freestone
+VFW 1210
+Project 3
+10-7-12
+*/
+
+html {
+    background-color: #7ED0E0;
+}
+
+h1 {
+    font-family: "Times New Roman", "Arial";
+    color: #172934;
+    font-size: 275%;
+    text-align: center;
+    padding: 0.75em;
+    margin: -0.75em -0.75em 0.75em -0.75em;
+}
+
+h2 {
+    font-family: "Helvetica", "Arial";
+    color: #172934;
+    font-size: 150%;
+    text-align: center;
+    padding: 1em;
+    margin: -1em -1em 1em -1em;
+}
+
+h1 + h2 {
+    margin-top: -1em;
+    padding-top: 0;
+}
+
+body {
+    margin: 0.5em auto;
+    padding: 0.5em;
+    color: #172934;
+    max-width: device-width;
+    max-height: device-height;
+    border: 0.5em white;
+    line-height: 1.5em;
+    position: inherit;
+}
+
+a {
+    font-family: "Helvetica", "Arial", sans-serif;
+    display: table;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#05c331), to(#026f1b));
+    background-color: #026f1b;
+    color: #ffffff;
+    font-size: 200%;
+    padding: 20px 5%;
+    margin: auto;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: solid 1px #172934;
+    text-shadow: 0 -1px 0 #172934;
+}

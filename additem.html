@@ -1,0 +1,75 @@
+<!doctype html>
+	<!-- Elijah Freestone -->
+	<!-- VFW 1210 -->
+	<!-- Project 3 -->
+	<!-- 10-7-12 -->
+<html>
+	<head>
+		<link rel="stylesheet" href="css/styles-additem.css" type="text/css" />
+		<!-- Character Set Meta -->
+		<meta charset="utf-8" />
+		<!-- Description Meta -->
+		<meta name="description" content="An app to save important dates, such as Birthdays and Anniversaries." />
+		<!-- Keywords Meta -->
+		<meta name="keywords" content="birthdays, anniversaries, date" />
+		<!-- Robots Meta -->
+		<meta name="robots" content="index, follow" />
+		<!-- Viewport Meta -->
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		
+		<!--Page Title-->
+		<title>Save-a-date</title>
+	</head>
+	<body>
+		<h1>Save-a-date</h1>
+		<form action="#" method="post" id="eventForm" />
+			<fieldset>
+			<legend>Event Info</legend>
+			<ul>
+		<!-- Type of Event -->
+				<li id="select"><label for="select">Type of Event:</label></li>
+		<!-- Date of Event -->
+				<li><label for="evdate">Event Date:</label><input type="date" id="evdate" /></li>
+		<!-- Event Description -->
+				<li><label for="evinfo">Event Information:</label><input type="text" id="evinfo" /></li>
+		<!-- Importance of Event Slider -->
+				<li><label for="importance">Event Importance:</label><input type="range" id="importance" min="1" max="10" class="range" /></li>
+		<!-- Attendance required?  -->
+				<li>Is Attendance Required?
+					<ul class="checkbox">
+						<li><input type="radio" value="Yes" id="Yes" name="attend" /><label for="Yes">Yes</label></li>
+						<li><input type="radio" value="No" id="No" name="attend" /><label for="No">No</label></li>
+						<li><input type="radio" value="Undecided" id="Undecided" name="attend" /><label for="Undecided">Undecided</label></li>
+					</ul>
+				</li>
+			</ul>
+			</fieldset>
+			<fieldset>
+			<legend>Event Details</legend>
+		<!-- Event Details (ie location of party etc) -->
+				<label for="details"></label><textarea id="details">Party Location, Contact Info, etc.</textarea>
+		<!-- Hidden Input -->	
+				<input type="hidden" value="true" />
+			</fieldset>
+		<!-- Submit Button -->	
+			<input type="submit" value="Save Date!" id="submit" />
+			<br>
+		<!-- Clear Stored Data Link -->
+			<!-- <a href="#" id="clearData">Clear Local Data</a> -->
+		<!-- Display Data Link -->
+			<!-- <a href="#" id="displayData">Display Data</a> -->
+		<!-- Add New Date Link -->
+			<!-- <a href="additem.html" id="addNew" style="display:none;">Add New Date</a> -->
+		</form>
+		<nav>
+		<!-- Clear Stored Data Link -->
+			<a href="#" id="clearData">Clear Local Data</a> 
+		<!-- Display Data Link -->
+			<a href="#" id="displayData">Display Data</a>
+		<!-- Add New Date Link -->
+			<a href="additem.html" id="addNew" style="display:none;">Add New Date</a>
+		</nav>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+
+</html>
