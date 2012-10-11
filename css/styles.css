@@ -9,22 +9,6 @@ html {
     background-color: #7ED0E0;
 }
 
-body>a {  /* For Save-a-date <a> tag on index */
-    font-family: "Helvetica", "Arial", sans-serif;
-    display: table;
-    text-align: center;
-    background: -webkit-gradient(linear, left top, left bottom, from(#05c331), to(#026f1b));
-    background-color: #026f1b;
-    color: #ffffff;
-    font-size: 200%;
-    padding: 20px 5%;
-    margin: auto;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    border: solid 1px #172934;
-    text-shadow: 0 -1px 0 #172934;
-}
-
 h1 {
 	font-family: "Times New Roman", "Arial";
     color: #172934;
@@ -53,6 +37,22 @@ body {
     position: inherit;
 }
 
+body>a {  /* For Save-a-date <a> tag on index */
+    font-family: "Helvetica", "Arial";
+    display: table;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#05c331), to(#026f1b));
+    background-color: #026f1b;
+    color: #ffffff;
+    font-size: 200%;
+    padding: 20px 5%;
+    margin: auto;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: solid 1px #172934;
+    text-shadow: 0 -1px 0 #172934;
+}
+
 legend {
     background-color: #f2fdff;
     -webkit-border-radius: 10px;
@@ -60,6 +60,12 @@ legend {
     border: solid 1px #172934;
     padding: 2px 7px;
     font-family: "Helvetica", "Arial";
+}
+
+span {
+	font-family: "Helvetica", "Arial";
+	color: #172934;
+    font-size: 75%;	
 }
 
 fieldset {
@@ -71,11 +77,17 @@ fieldset {
     margin-bottom: 5px;
 }
 
+ul#errors {
+	font-family: "Helvetica", "Arial";
+	color: red;
+    font-size: 75%;	
+}
+
 input#importance { /* Slider */
     -webkit-appearance: none;
     background-color: #172934;
     height: 8px;
-    width: 175px;
+    width: 155px;
     margin-top: 18px;
     margin-bottom: 15px;
 }

@@ -25,15 +25,18 @@
 		<form action="#" method="post" id="eventForm" />
 			<fieldset>
 			<legend>Event Info</legend>
+			<span>* fields are required.</span>
+			<ul id="errors"></ul>
 			<ul>
 		<!-- Type of Event -->
-				<li id="select"><label for="select">Type of Event:</label></li>
+				<li id="select"><label for="select">*Type of Event:</label></li>
 		<!-- Date of Event -->
-				<li><label for="evdate">Event Date:</label><input type="date" id="evdate" /></li>
+				<li><label for="evdate">*Event Date:</label><input type="date" id="evdate" /></li>
 		<!-- Event Description -->
-				<li><label for="evinfo">Event Information:</label><input type="text" id="evinfo" /></li>
+				<li><label for="evinfo">*Event Information:</label><input type="text" id="evinfo" placeholder="Dads birthday, etc."/></li>
 		<!-- Importance of Event Slider -->
-				<li><label for="importance">Event Importance:</label><input type="range" id="importance" min="1" max="10" class="range" /></li>
+				<li><label for="importance">Event Importance:</label><br>
+					1 <input type="range" id="importance" min="1" max="5" class="range" value="3" /> 5 </li>
 		<!-- Attendance required?  -->
 				<li>Is Attendance Required?
 					<ul class="checkbox">
